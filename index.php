@@ -34,15 +34,15 @@
         <button type="submit">Envoyer</button>
     </form>
 
-    <h2>Commentaires :</h2>
+    <h2>Commentaires : &lt;/&gt;</h2>
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $comment = $_POST['comment'];
             // Ajout direct sans filtrage
-            print "<p>$comment</p>";
+            # print "<p>$comment</p>";
 
             # avec filtrage
-            //print "<p>✏️<kbd>" . htmlspecialchars($comment, ENT_QUOTES, 'UTF-8') . "</kbd></p>";
+            print "<p>✏️<kbd>" . htmlspecialchars($comment, ENT_QUOTES, 'UTF-8') . "</kbd></p>";
         }
         ?>
     
