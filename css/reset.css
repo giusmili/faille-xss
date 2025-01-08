@@ -1,0 +1,78 @@
+/* Reset de base */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuration de la racine à 62.5% pour des rem basés sur 10px (1rem = 10px) */
+html {
+    font-size: 62.5%;
+}
+
+/* Héritage pour des éléments de base */
+body {
+    display: grid;
+    font-family: sans-serif;
+    line-height: 1.6;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100svh;
+}
+h1,h2,h3{
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Suppression des décorations et des formats par défaut */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Suppression des styles par défaut pour les formulaires */
+input,
+textarea {
+    font-family: inherit;
+    font-size: 1.6rem; /* Basé sur la racine pour des tailles adaptées */
+}
+
+/*
+
+=====================
+|                   |
+|    CSS THEME      |
+|                   |
+=====================
+
+*/
+
+header h1{
+    line-height: 7.0rem;
+    text-align: center;
+    font-size: xx-large;
+}
+main h2{
+    padding: 2rem;
+}
+footer *{
+    text-align: center;
+}
